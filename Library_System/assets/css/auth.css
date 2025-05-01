@@ -1,0 +1,201 @@
+/* Authentication Pages */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 150px);
+    padding: 40px 0;
+}
+
+.auth-card {
+    background: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    margin: 20px;
+}
+
+.auth-card h2 {
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: var(--primary-color);
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 149, 79, 0.2);
+}
+
+/* Password toggle eye icon */
+.password-toggle {
+    position: relative;
+}
+
+.password-toggle input[type="password"],
+.password-toggle input[type="text"] {
+    padding-right: 40px;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--secondary-color);
+}
+
+.toggle-password:hover {
+    color: var(--dark-green);
+}
+
+.auth-links {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 0.95rem;
+}
+
+.auth-links a {
+    color: var(--secondary-color);
+    font-weight: 500;
+}
+
+.auth-links a:hover {
+    text-decoration: underline;
+}
+
+/* Form Validation */
+.is-invalid {
+    border-color: var(--error-red) !important;
+}
+
+.invalid-feedback {
+    color: var(--error-red);
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
+
+/* Social Login */
+.social-login {
+    margin-top: 25px;
+    text-align: center;
+}
+
+.social-login p {
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--dark-gray);
+}
+
+.social-login p::before,
+.social-login p::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 30%;
+    height: 1px;
+    background-color: var(--medium-gray);
+}
+
+.social-login p::before {
+    left: 0;
+}
+
+.social-login p::after {
+    right: 0;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light-gray);
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+    .auth-card {
+        padding: 30px 20px;
+    }
+}
+
+/* Add these styles to your existing auth.css */
+.password-toggle {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.password-toggle input {
+    padding-right: 40px !important;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 12px;
+    top: 37px;
+    cursor: pointer;
+    color: var(--secondary-color);
+    z-index: 2;
+}
+
+.toggle-password:hover {
+    color: var(--dark-green);
+}
+
+/* Terms checkbox positioning */
+.terms-group {
+    margin: 20px 0;
+    display: flex;
+    align-items: center;
+}
+
+.terms-group input {
+    width: auto !important;
+    margin-right: 10px;
+}
+
+.terms-group label {
+    margin-bottom: 0;
+}
