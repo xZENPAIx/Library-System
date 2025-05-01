@@ -1,0 +1,31 @@
+/* Form-specific styles not covered by auth.css/dashboard.css */
+.form-control {
+    border: 1px solid var(--medium-gray);
+    border-radius: 4px;
+    padding: 10px 15px;
+    width: 100%;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px rgba(0, 149, 79, 0.1);
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+/* Validation states */
+.is-invalid {
+    border-color: var(--error-red) !important;
+}
+
+.invalid-feedback {
+    color: var(--error-red);
+    font-size: 0.85rem;
+    margin-top: 5px;
+}
